@@ -1,0 +1,345 @@
+/* General */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, normal;
+    width: 100%;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    margin: 15px 0 20px 0;
+}
+
+.normal {
+    border-radius: 6px;
+    border: none;        
+    padding: 16px 32px;      
+    text-align: center;      
+    display: inline-block;      
+    font-size: 16px;           
+    transition-duration: 0.4s;      
+    cursor: pointer;      
+    text-decoration: none;      
+    text-transform: uppercase;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+/* Navbar */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #257B41;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3 ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Nunito, normal;
+}
+
+.logoimg {
+    width: 25px;
+}
+
+.cart {
+    width: 25px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3 ease;
+}
+
+#navbar li a:hover, 
+#navbar li a.active {
+    color: #6ae68b;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 10%;
+    background-color: #6ae68b;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+} 
+
+/* Home */
+
+#hero {
+    background-image: url("img/arduino-hero.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 75px;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(37, 123, 65, 1);
+}
+
+#hero h4 {
+    padding-bottom: 15px;
+}
+
+#hero h1 {
+    color: #6ae68b;
+}
+
+#hero button {
+    color: black;
+    background-color: #6ae68b;
+    border-radius: 6px;
+    border: none;        
+    padding: 16px 32px;      
+    text-align: center;      
+    display: inline-block;      
+    font-size: 16px;      
+    margin: 4px 2px;       
+    transition-duration: 0.4s;      
+    cursor: pointer;      
+    text-decoration: none;      
+    text-transform: uppercase;
+}
+
+#hero button:hover {
+    background-color: #007a86;
+    color: white;
+}
+
+/* Productos */
+
+.desc1 {
+    text-decoration: line-through;
+}
+
+.desc2 {
+    text-decoration: double;
+    color: red;
+}
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .prod-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .prod {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .prod:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .prod img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .prod .desc {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .prod .desc span{
+    color: #606063;
+    font-size: 12px;
+}
+
+#product1 .prod .desc h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .prod .desc i{
+    font-size: 12px;
+    color: rgb(243, 184, 25)
+}
+
+#product1 .prod .desc h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#product1 .prod .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    font-weight: 500;
+    color: black;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#product1 .prod .cart:hover {
+    color: #007a86;
+    background-color: #9ee2be;
+}
+
+/* Newsletter */
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("img/banner.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #076A35;
+}
+
+#newsletter h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+
+#newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #c1cbc1;
+}
+
+#newsletter p span{
+    color: #ffbd27;
+}
+
+#newsletter .form {
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input {
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+    background-color: #6ae68b;
+    color: black;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#newsletter button:hover {
+    background-color: #007a86;
+    color: white;
+}
+
+/* Footer */
+
+
+
+/* Fuentes */
+
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/nunito/v25/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTQ3jw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
