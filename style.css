@@ -55,7 +55,8 @@ p {
 }
 
 .section-m1 {
-    margin: 40px 0;
+    margin: 20px 0;
+    background-color: black;
 }
 
 /* Navbar */
@@ -324,7 +325,85 @@ p {
 
 /* Footer */
 
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* .logoimg1 {
+    margin-bottom: 30px;
+    width: 10%;
+} */
+
+footer h4 {
+    color: white;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer a:hover {
+    color: #6ae68b;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow i {
+    color: white;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .follow i:hover {
+    color: #6ae68b;
+}
+
+footer .cprt {
+    width: 100%;
+    text-align: center;
+}
+
+/* Acerca de */
+
+#page-header {
+    background-image: url("img/banner-tienda.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2,
+#page-header p {
+    color: white;
+}
 
 /* Fuentes */
 
