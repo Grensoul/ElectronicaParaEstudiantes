@@ -26,12 +26,21 @@
         </div>
     </section>
 
-    <section id="hero">
-        <h4>Ofertas Black Friday</h4>
-        <h2>Grandes descuentos</h2>
-        <h1>En productos Arduino</h1>
-        <p>¡Obtén hasta un 60% de descuento!</p>
-        <button>Compra ya</button>
+    <section id="page-header-contact">
+        <h2>¿Tienes dudas?</h2>
+        <p>¡Contáctanos, estamos a tu disposición!</p>
+    </section>
+
+    <section id="form-details">
+        <form action="">
+            <h2>Déjanos un mensaje</h2>
+            <input type="text" placeholder="Nombre(s)">
+            <input type="text" placeholder="Apellido(s)">
+            <input id="email" type="text" placeholder="E-mail">
+            <input type="text" placeholder="Asunto">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tus comentarios"></textarea>
+            <button class="normal" onclick="ValidateEmailForm()">Enviar</button>
+        </form>
     </section>
 
     <section id="newsletter" class="section-p1">
@@ -40,8 +49,8 @@
             <p>Recibe nuestras <span>ofertas especiales</span> y <span>renovación de stock</span> por correo electrónico</p>
         </div>
         <div class="form">
-            <input type="text" placeholder="Tu dirección de E-mail">
-            <button class="normal">Suscríbete</button>
+            <input id="text" type="text" placeholder="Tu dirección de E-mail">
+            <button type="button" class="normal" onclick="ValidateEmail()">Suscríbete</button>
         </div>
     </section>
 

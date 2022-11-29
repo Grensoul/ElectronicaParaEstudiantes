@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronica para estudiantes</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#" class="logo"><img class="logoimg" src="img/processor-icon-18-256.png">Electronica para
+            estudiantes</a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a class="active" href="shop.html">Tienda</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+                <li><a href="cart.html"><img src="img/shopping-basket (1).png" class="cart"></img></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-prod-img">
+            <img src="img/products/arduino-mega.jpg" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/arduino-micro.webp" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/arduino-due.webp" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/arduino-nano.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/leoar.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-prod-details">
+            <h6>Arduino</h6>
+            <h4>Arduino Mega</h4>
+            <h2 class="desc1">$1,149 MXN</h2><h2 class="desc2">$649 MXN</h2>
+            <input type="number" value="1">
+            <button class="normal">Añadir al carrito</button>
+            <h4>Descripción del producto</h4>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae commodi aperiam earum similique animi, sed minima consequuntur itaque eligendi nostrum. Voluptatem possimus dicta nostrum nulla! Reprehenderit blanditiis autem unde voluptas?</span>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Productos relacionados</h2>
+        <div class="prod-container">
+            <div class="prod">
+                <img src="img/products/arduino-mega.jpg" alt="">
+                <div class="desc">
+                    <span>Arduino</span>
+                    <h5>Arduino Mega</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="desc1">$1,149 MXN</h4><h4 class="desc2">$649 MXN</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="prod">
+                <img src="img/products/arduino-due.webp" alt="">
+                <div class="desc">
+                    <span>Arduino</span>
+                    <h5>Arduino Due</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="desc1">$1,549 MXN</h4><h4 class="desc2">$989 MXN</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="prod">
+                <img src="img/products/arduino-micro.webp" alt="">
+                <div class="desc">
+                    <span>Arduino</span>
+                    <h5>Arduino Micro</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="desc1">$599 MXN</h4><h4 class="desc2">$459 MXN</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="prod">
+                <img src="img/products/arduino-nano.jpg" alt="">
+                <div class="desc">
+                    <span>Arduino</span>
+                    <h5>Arduino Nano</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="desc1">$299 MXN</h4><h4 class="desc2">$189 MXN</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1">
+        <div class="newstext">
+            <h4>Suscríbete al boletín</h4>
+            <p>Recibe nuestras <span>ofertas especiales</span> y <span>renovación de stock</span> por correo electrónico
+            </p>
+        </div>
+        <div class="form">
+            <input id="text" type="text" placeholder="Tu dirección de E-mail">
+            <button type="button" class="normal" onclick="ValidateEmail()">Suscríbete</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+
+            <h4>Contacto</h4>
+            <p><strong>Dirección: </strong>Av.colon#173, Calle Pte., Sarabia, 64490 Monterrey, N.L.</p>
+            <p><strong>E-mail: </strong>tienda.colon@semty.mx</p>
+            <p><strong>Horario: </strong>Lunes a Viernes de 10:00 a 18:00, Sábados de 9:00 a 16:00</p>
+            <div class="follow">
+                <h4>Síguenos</h4>
+                <div class="icon">
+                    <a href="https://www.facebook.com/pages/Electronica-para-Estudiantes/218130035198663"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Info</h4>
+            <a href="">Acerca de</a>
+            <a href="">Información de envío</a>
+            <a href="">Políticas de privacidad</a>
+            <a href="">Terminos y condiciones</a>
+            <a href="">Contáctanos</a>
+        </div>
+
+        <div class="col">
+            <h4>Mi cuenta</h4>
+            <a href="">Iniciar sesión</a>
+            <a href="">Ver carrito</a>
+            <a href="">Estatus de pedido</a>
+            <a href="">Ayuda</a>
+        </div>
+
+        <div class="cprt">
+            <p>© 2022, Electrónica para estudiantes</p>
+        </div>
+    </footer>
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallImg = document.getElementsByClassName("small-img");
+
+        smallImg[0].onclick = function() {
+            MainImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function() {
+            MainImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function() {
+            MainImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function() {
+            MainImg.src = smallImg[3].src;
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

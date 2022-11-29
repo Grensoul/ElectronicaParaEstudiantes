@@ -146,15 +146,18 @@ p {
     box-shadow: 0 5px 15px rgba(37, 123, 65, 1);
 }
 
-#hero h4 {
+#hero h4,
+#heroshop h4 {
     padding-bottom: 15px;
 }
 
-#hero h1 {
+#hero h1,
+#heroshop h1 {
     color: #6ae68b;
 }
 
-#hero button {
+#hero button,
+#heroshop button {
     color: black;
     background-color: #6ae68b;
     border-radius: 6px;
@@ -170,7 +173,8 @@ p {
     text-transform: uppercase;
 }
 
-#hero button:hover {
+#hero button:hover,
+#heroshop button:hover {
     background-color: #007a86;
     color: white;
 }
@@ -386,10 +390,26 @@ footer .cprt {
     text-align: center;
 }
 
+/* Tienda */
+
+#heroshop {
+    background-image: url("img/integrados.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 75px;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(37, 123, 65, 1);
+}
+
 /* Acerca de */
 
 #page-header {
-    background-image: url("img/banner-tienda.jpg");
+    background-image: url("img/circuitofondo.webp");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -401,8 +421,156 @@ footer .cprt {
 }
 
 #page-header h2,
-#page-header p {
+#page-header p,
+#page-header-contact h2,
+#page-header-contact p {
     color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+#about img {
+    width: 40%;
+    height: auto;
+}
+
+#about div {
+    padding-left: 40px;
+}
+
+#map {
+    align-items: center;
+    text-align: center;
+}
+
+#map iframe {
+    padding-top: 20px;
+    width: 75;
+}
+
+/* Contacto */
+
+#page-header-contact {
+    background-image: url("img/talking.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#form-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 10% 20%;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+    align-items:center;
+}
+
+#form-details form {
+    width: 100%;
+    display: inline;
+    flex-direction: column;
+    align-items:center;
+}
+
+
+#form-details form h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#form-details form input,
+#form-details form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+    resize: none;
+}
+
+#form-details form button {
+    background-color: #6ae68b;
+    color: black;
+    white-space: nowrap;
+}
+
+#form-details button:hover {
+    background-color: #007a86;
+    color: white;
+}
+
+/* Producto */
+
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-prod-img {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-prod-details {
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-prod-details h4 {
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-prod-details h2 {
+    font-size: 26px;
+}
+
+#prodetails .single-prod-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-prod-details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-prod-details input:focus {
+    outline: none;
+}
+
+#prodetails .single-prod-details button {
+    background: #076A35;
+    color: white;
+}
+
+#prodetails .single-prod-details span {
+    line-height: 25px;
 }
 
 /* Fuentes */
